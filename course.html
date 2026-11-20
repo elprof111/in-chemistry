@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>المذكرات | البروف</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="header">
+        <a class="brand" href="index.html">
+            <b>البروف</b>
+            <span>في الكيمياء</span>
+        </a>
+        <nav class="nav">
+            <a href="index.html">الرئيسية</a>
+            <a class="active" href="courses.html">المذكرات</a>
+            <a href="index.html#features">مميزات المنصة</a>
+            <a href="index.html#about">عن البروف</a>
+            <a href="developer.html">عن المطور</a>
+        </nav>
+        <div class="header-actions">
+            <a class="btn primary" href="courses.html">تصفح المذكرات</a>
+        </div>
+        <button class="mobile-menu" type="button" aria-label="القائمة">☰</button>
+    </header>
+
+    <main class="page">
+        <div class="course-hero">
+            <div>
+                <span class="eyebrow" id="gradeEyebrow"></span>
+                <h1 id="gradeTitle"></h1>
+                <p id="gradeDesc"></p>
+            </div>
+            <div class="course-stat">
+                <b id="gradeChapters">0</b>
+                <span>فصل</span>
+                <b id="gradeFiles">0</b>
+                <span>ملف PDF</span>
+            </div>
+        </div>
+
+        <div class="course-layout">
+            <section>
+                <div class="tabs" id="termTabs"></div>
+                <div id="chapterList"></div>
+            </section>
+
+            <aside class="course-sidebar">
+                <div class="teacher-mini">
+                    <div>👨‍🏫</div>
+                    <b>البروف في الكيمياء</b>
+                    <small>مدرس المادة</small>
+                </div>
+
+                <a href="courses.html" class="btn primary full">← كل المذكرات</a>
+
+                <h4>صفوف تانية</h4>
+                <div id="otherGrades"></div>
+
+                <div class="side-info">
+                    <p>✓ ملفات PDF للعرض والتحميل</p>
+                    <p>✓ مقسمة حسب الترم والفصل</p>
+                    <p>✓ بدون تسجيل أو حساب</p>
+                </div>
+            </aside>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-brand">
+            <b>البروف</b>
+            <span>في الكيمياء</span>
+        </div>
+        <small>© 2026 البروف في الكيمياء</small>
+    </footer>
+
+    <script src="data.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>

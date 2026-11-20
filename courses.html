@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>المذكرات | البروف</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="header">
+        <a class="brand" href="index.html">
+            <b>البروف</b>
+            <span>في الكيمياء</span>
+        </a>
+        <nav class="nav">
+            <a href="index.html">الرئيسية</a>
+            <a class="active" href="courses.html">المذكرات</a>
+            <a href="index.html#features">مميزات المنصة</a>
+            <a href="index.html#about">عن البروف</a>
+            <a href="developer.html">عن المطور</a>
+        </nav>
+        <div class="header-actions">
+            <a class="btn primary" href="courses.html">تصفح المذكرات</a>
+        </div>
+        <button class="mobile-menu" type="button" aria-label="القائمة">☰</button>
+    </header>
+
+    <main class="page">
+        <div class="page-title">
+            <span>البروف في الكيمياء</span>
+            <h1>المذكرات</h1>
+            <p>اختار صفك الدراسي وحمّل ملفات PDF.</p>
+        </div>
+
+        <div class="filters">
+            <input id="courseSearch" placeholder="🔎 ابحث عن المادة أو الصف..." autocomplete="off">
+            <select id="gradeFilter">
+                <option value="">كل الصفوف</option>
+                <option value="third">ثالثة ثانوي</option>
+                <option value="second">ثانية ثانوي</option>
+                <option value="first">أولى ثانوي</option>
+            </select>
+        </div>
+
+        <div class="course-grid">
+            <article class="course-card searchable blue-card" data-grade="third">
+                <div class="course-icon">⚛</div>
+                <span>ثالثة ثانوي</span>
+                <h3>كيمياء الصف الثالث الثانوي</h3>
+                <p>مذكرات وتدريبات ومراجعات المنهج كامل مقسمة على الفصول.</p>
+                <div class="course-meta">
+                    <span>سنة كاملة</span>
+                    <span>ملفات PDF</span>
+                </div>
+                <a href="course.html?grade=third" class="btn primary full">عرض المذكرات</a>
+            </article>
+
+            <article class="course-card searchable purple-card" data-grade="second">
+                <div class="course-icon">⚗</div>
+                <span>ثانية ثانوي</span>
+                <h3>كيمياء الصف الثاني الثانوي</h3>
+                <p>مذكرات الترم الأول والترم الثاني مقسمة على الفصول.</p>
+                <div class="course-meta">
+                    <span>ترم أول</span>
+                    <span>ترم تاني</span>
+                </div>
+                <a href="course.html?grade=second" class="btn purple full">عرض المذكرات</a>
+            </article>
+
+            <article class="course-card searchable green-card" data-grade="first">
+                <div class="course-icon">🧪</div>
+                <span>أولى ثانوي</span>
+                <h3>علوم متكاملة الصف الأول الثانوي</h3>
+                <p>مذكرات الترم الأول والترم الثاني مقسمة على الفصول.</p>
+                <div class="course-meta">
+                    <span>ترم أول</span>
+                    <span>ترم تاني</span>
+                </div>
+                <a href="course.html?grade=first" class="btn green full">عرض المذكرات</a>
+            </article>
+        </div>
+
+        <p id="noResults" class="no-results" hidden>مفيش نتائج مطابقة لبحثك.</p>
+    </main>
+
+    <footer>
+        <div class="footer-brand">
+            <b>البروف</b>
+            <span>في الكيمياء</span>
+        </div>
+        <small>© 2026 البروف في الكيمياء</small>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
